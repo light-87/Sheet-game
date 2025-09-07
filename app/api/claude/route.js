@@ -98,7 +98,9 @@ Analyze the data and provide a comprehensive, data-driven response that helps ma
     console.log('🤖 Sending to Claude for analysis...');
     
     const response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
+    //   model: 'claude-sonnet-4-20250514',
+    //   model: 'claude-3-5-sonnet-20241022',
+      model: 'claude-3-5-haiku-latest',
       max_tokens: 2000,
       system: businessDataPrompt,
       messages: [{ 
